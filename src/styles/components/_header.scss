@@ -1,0 +1,32 @@
+header {
+  //   background: $gradient-1;
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: #fff;
+  }
+
+  background-image: url("../../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 710px;
+}
+
+.nav-item{
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    height: 910px;
+    background: $gradient-1;
+  }
+}

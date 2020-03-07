@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900|Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext");
+
+section {
+  margin-top: 50px;
+}
+
+* {
+  // outline: 1px solid rgba(220, 20, 60, 0.2) !important;
+}
+
+* {
+  color: #222222;
+  font-family: "Roboto", "Open sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-family: Open Sans;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 54px;
+  // text-transform: uppercase;
+}
+
+h2 {
+  font-family: Open Sans;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 26px;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 90px;
+  &:before {
+    content: "";
+    display: block;
+    width: 95px;
+    height: 11px;
+    background: #222222;
+    position: absolute;
+    bottom: 34%;
+    left: -105px;
+  }
+}
+
+p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 1.15px;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 7px;
+  margin-top: 70px;
+  line-height: 40px;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #666666;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 90px;
+}
+
+.btn {
+  @media screen and (max-width: 425px) {
+    display: block;
+  }
+  padding: 6px 30px;
+  &:hover {
+    padding: 6px 30px;
+  }
+  border: none;
+}
+
+.btn-1 {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+  margin-top: 10px;
+
+  &:hover {
+    color: #222;
+    background-color: #fff;
+  }
+}
+
+.btn-2 {
+  display: inline-block;
+  background: linear-gradient( #00AEFF, #0054FF);;
+  color: #fff;
+  border-radius: 150px;
+  &:hover {
+    // border: 3px solid #0054ff;
+    // background: none;
+    // color: #222;
+  }
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: $gradient-1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+}
