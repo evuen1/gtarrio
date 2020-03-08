@@ -7,7 +7,10 @@ section {
 .hero-block {
   padding-top: 140px;
   color: #fff;
-  h1,p{color: #ffffff;}
+  h1,
+  p {
+    color: #ffffff;
+  }
   &__features {
     margin-top: 30px;
     display: flex;
@@ -59,17 +62,53 @@ section {
 }
 
 .block-products {
-  .products-r{
+  .products-r {
     margin-bottom: 45px;
   }
   &__title {
     left: 0;
     position: absolute;
   }
-  .products-s-title{
+  .products-s-title {
     margin-bottom: 35px;
   }
   .card {
     margin-top: 35px;
+  }
+}
+
+.block-instructions {
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+    .text{
+      margin-left: 30px;
+    }
+    &-number {
+      margin-top: -13px;
+      font-size: 120px;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: $gradient-1;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #222222;
+      font-family: "Signika Negative";
+    }
+    &-title {
+      font-size: 18px;
+      line-height: 29px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 29px;
+      color: #444444;
+    }
   }
 }
