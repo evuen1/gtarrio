@@ -9,7 +9,7 @@ section {
 }
 
 * {
-  color: #222222;
+  color: #222222;  
   font-family: "Roboto", "Open sans", sans-serif;
 }
 
@@ -46,16 +46,16 @@ h3 {
   line-height: 26px;
   text-transform: uppercase;
   position: relative;
-  margin-left: 90px;
+  margin-left: 120px;
   &:before {
     content: "";
     display: block;
-    width: 95px;
+    width: 115px;
     height: 11px;
     background: #222222;
     position: absolute;
     bottom: 34%;
-    left: -105px;
+    left: -125px;
   }
 }
 
@@ -97,6 +97,7 @@ p {
     padding: 6px 30px;
   }
   border: none;
+  max-height: 38px;
 }
 
 .btn-1 {
@@ -113,13 +114,26 @@ p {
 
 .btn-2 {
   display: inline-block;
-  background: linear-gradient( #00AEFF, #0054FF);;
+  background: $gradient-1;
   color: #fff;
   border-radius: 150px;
   &:hover {
-    // border: 3px solid #0054ff;
-    // background: none;
-    // color: #222;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+  }
+}
+
+.btn-3 {
+  display: inline-block;
+  background: $gradient-1;
+  color: #cccccc;
+  border-radius: 0;
+  padding: 7px 50px;
+  &:hover {
+    padding: 7px 50px;
+    color: #fff;
   }
 }
 
@@ -133,4 +147,56 @@ p {
   align-items: center;
 
   border-radius: 100%;
+}
+
+.card {
+  border: none;
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .card-body {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 40px rgba($color: #222222, $alpha: 0.25);
+    border-radius: 10px;
+    .category {
+      font-family: Open Sans;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .card-title {
+      text-align: center;
+      margin: 10px auto;
+      font-weight: 900;
+      text-transform: uppercase;
+      span {
+        margin-top: 3px;
+        color: $card-span-color;
+        display: inline-block;
+      }
+    }
+    .btn {
+      margin-top: 15px;
+      display: block;
+      text-align: center;
+    }
+  }
+  ul {
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  li {
+    list-style: disc;
+    position: relative;
+    margin: 9px 0;
+  }
 }

@@ -5,7 +5,9 @@ section {
 }
 
 .hero-block {
-  margin-top: 80px;
+  padding-top: 140px;
+  color: #fff;
+  h1,p{color: #ffffff;}
   &__features {
     margin-top: 30px;
     display: flex;
@@ -32,6 +34,11 @@ section {
       }
     }
   }
+  background-image: url("../../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 710px;
 }
 
 .block-features {
@@ -48,5 +55,21 @@ section {
       margin-top: 16px;
       font-weight: 900;
     }
+  }
+}
+
+.block-products {
+  .products-r{
+    margin-bottom: 45px;
+  }
+  &__title {
+    left: 0;
+    position: absolute;
+  }
+  .products-s-title{
+    margin-bottom: 35px;
+  }
+  .card {
+    margin-top: 35px;
   }
 }
