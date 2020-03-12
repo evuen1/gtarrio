@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Отзывы</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" sizes="64x64" href="img/favicons/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
+
+    <script type="text/javascript">
+        VK.init({
+            apiId: 7350743,
+            onlyWidgets: true
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/svg/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_navbar"
+                    aria-controls="header_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse m-left" id="header_navbar">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Заказать</a>
+                        <a class="nav-item nav-link" href="faq.html">FAQ</a>
+                        <a class="nav-item nav-link" href="reviews.html">Отзывы</a>
+                        <a class="nav-item nav-link" target="_blank" href="https://vk.com/eliexgroup">ВКонтакте</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- content [ -->
+    <main>
+
+
+
+        <section class="container">
+
+            <h2 class="title mb-5">ОТЗЫВЫ КЛИЕНТОВ</h2>
+
+            <!-- Put this div tag to the place, where the Comments block will be -->
+            <div id="vk_comments"></div>
+            <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {
+                    limit: 10,
+                    attach: "*"
+                });
+            </script>
+
+        </section>
+
+
+
+    </main>
+    <!-- ] content -->
+
+    <footer>
+        <div class="row container">
+
+            <div class="col-lg-6">
+                <div class="footer-col-title"><img src="img/svg/logo.svg" alt="logo"></div>
+                <div class="footer-col-text">
+                    <p>На нашем сайте вы можете <a href="index.html#products">заказать прокачку</a></p>
+
+                    <p>
+                        персонажа для гта 5. персонажа в GTA ONLINE на PC PS4 или XBOX ONE.
+                        Накрутка денег в ГТА 5 происходит самым безопасным путем, через зарубежный софт.
+                        прокачка гта 5 онлайн.
+                        gta 5 online ps4 xbox one Прокачка ГТА 5 Онлайн на PS4 XBOX ONE от <a href="/">gta-boost.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footer-col-title">Навигация</div>
+                <div class="footer-col-text">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footer-col-title">Мы принимаем</div>
+                <div class="footer-col-text text-center">
+                    <img src="img/f1.png" alt=""> <br> <br>
+                    <img src="img/f2.png" alt="">
+                </div>
+            </div>
+
+            <div class="copyright col-lg-12">© gta-boost.com - Все права защищены</div>
+
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
